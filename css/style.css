@@ -1,0 +1,43 @@
+.container {
+  width: 400px;
+  height: auto;
+  background-color: #db470b;
+  display: block;
+  border: 10px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  }
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  color: #f2f2f2;
+}
+
+input {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #191919;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #f2f2f2;
+}
+
+ul li {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  color: #f2f2f2;
+  transition: 0.2s;
+}
