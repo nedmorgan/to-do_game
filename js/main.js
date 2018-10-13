@@ -1,16 +1,19 @@
+let input = document.querySelector('input');
+let ul = document.querySelector('ul');
+let button = document.querySelector('button');
 
-
-function addItem ()) {
-  let input = document.getElementById('input')[0];
-  let newItemText = input.value;
+button.addEventListener('click', function(addItem) {
+  //create new li
   let newItem = document.createElement('li');
-  newItem.innerHTML = newItemText;
-  document.getElementById('li').appendChild(newItem);
-}
+  //create span element
+  let spanElement = document.createElement('span');
+  //add input value
+  let newTodo = input.value;
+  //append to list
+  ul.appendChild(newItem).append(spanElement, newTodo);
+});
 
-var button = document.getElementById('button');
-button.addEventListener('click', addItem());
-
-function checkItem () {
-
-}
+newItem.addEventListener('click', function(deleteItem) {
+  let postedItem = document.getElementsByTagName('li');
+  ul.removeChild(postedItem);
+});
