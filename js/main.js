@@ -1,6 +1,6 @@
 let input = document.querySelector('input');
 let ul = document.querySelector('ul');
-let button = document.querySelector('button');
+let button = document.getElementById('add');
 
 button.addEventListener('click', function(addItem) {
   //create new li
@@ -13,7 +13,8 @@ button.addEventListener('click', function(addItem) {
   ul.appendChild(newItem).append(spanElement, newTodo);
 });
 
-newItem.addEventListener('click', function(deleteItem) {
-  let postedItem = document.getElementsByTagName('li');
-  ul.removeChild(postedItem);
+let remove = document.getElementById('remove');
+
+remove.addEventListener('click', function() {
+  ul.children[0].remove();
 });
