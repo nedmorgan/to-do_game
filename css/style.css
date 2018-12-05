@@ -49,6 +49,35 @@ li {
   font-family: "Ubuntu", sans-serif;
   color: #f2f2f2;
   margin: 10px 0 0 0;
-  padding: 0;
+  padding: 5px;
   cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+ul li:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+ul li:hover {
+  background-color: rgb(105, 105, 105);
+  color: white;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  background-color: rgb(105, 105, 105);
+  color: black;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  margin-left: 20px;
+}
+
+.close:hover {
+  color: black;
+  background-color: white;
 }
